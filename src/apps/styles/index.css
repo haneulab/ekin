@@ -1,0 +1,4 @@
+/* default config */
+@import url('./config/index.css');
+/* tailwind style */
+@import url('./tailwind/index.css');
