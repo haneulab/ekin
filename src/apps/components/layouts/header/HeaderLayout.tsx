@@ -1,5 +1,5 @@
 import { type ApplicationComponent } from '@application/types'
-import { MdOutlineSportsHandball } from 'react-icons/md'
+import { TbShoe } from 'react-icons/tb'
 import { GiClothes } from 'react-icons/gi'
 import {
     AiOutlineHeart,
@@ -18,8 +18,8 @@ const HeaderLayout: ApplicationComponent = () => {
             <section className="hidden lg:block bg-stone-100 text-neutral-700">
                 <div className="px-4 py-2 max-w-cutoff mx-auto flex justify-between items-center">
                     <ul className="flex items-center gap-x-2 lg:gap-x-4 text-xl lg:text-2xl">
-                        <MdOutlineSportsHandball className="transition-smooth hover:opacity-60" />
-                        <GiClothes className="transition-smooth hover:opacity-60" />
+                        <GiClothes className="transition-smooth hover:opacity-60 cursor-pointer" />
+                        <TbShoe className="transition-smooth hover:opacity-60 cursor-pointer" />
                     </ul>
                     <ul className="flex itmems-center text-sm font-nunito text-gray-600 gap-x-2 divide-x divide-gray-600/20">
                         <Link href={'/'}>
@@ -46,7 +46,7 @@ const HeaderLayout: ApplicationComponent = () => {
                 </div>
             </section>
             <section className="bg-white text-slate-800">
-                <div className="p-4 lg:py-2 max-w-cutoff mx-auto flex justify-between items-center space-x-4 lg:grid lg:grid-cols-3 lg:gap-x-8">
+                <div className="p-4 max-w-cutoff mx-auto flex justify-between items-center space-x-4 lg:grid lg:grid-cols-3 lg:gap-x-8">
                     <article>
                         <h1>
                             <Link href={'/'}>
