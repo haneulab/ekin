@@ -46,7 +46,7 @@ const HeaderLayout: ApplicationComponent = () => {
                 </div>
             </section>
             <section className="bg-white text-slate-800">
-                <div className="p-4 max-w-cutoff mx-auto flex justify-between items-center space-x-4 lg:grid lg:grid-cols-3 lg:gap-x-8">
+                <div className="p-4 lg:py-2 max-w-cutoff mx-auto flex justify-between items-center space-x-4 lg:grid lg:grid-cols-3 lg:gap-x-8">
                     <article>
                         <h1>
                             <Link href={'/'}>
