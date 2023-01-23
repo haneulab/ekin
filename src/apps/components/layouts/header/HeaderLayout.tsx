@@ -15,30 +15,30 @@ import Logo from 'public/logo.png'
 const HeaderLayout: ApplicationComponent = () => {
     return (
         <header className="static top-0 z-40 w-full">
-            <section className="hidden lg:block bg-stone-100 text-neutral-700">
+            <section className="hidden lg:block bg-neutral-900/90 text-slate-200/90">
                 <div className="px-4 py-2 max-w-cutoff mx-auto flex justify-between items-center">
                     <ul className="flex items-center gap-x-2 lg:gap-x-4 text-xl lg:text-2xl">
                         <GiClothes className="transition-smooth hover:opacity-60 cursor-pointer" />
                         <TbShoe className="transition-smooth hover:opacity-60 cursor-pointer" />
                     </ul>
-                    <ul className="flex itmems-center text-sm font-nunito text-gray-600 gap-x-2 divide-x divide-gray-600/20">
+                    <ul className="flex itmems-center text-sm font-nunito text-gray-200 gap-x-2 divide-x divide-gray-600/20">
                         <Link href={'/'}>
-                            <a className="pl-2 transform hover:text-stone-900 hover:font-medium">
+                            <a className="pl-2 transform hover:text-gray-50 hover:font-medium">
                                 Find a store
                             </a>
                         </Link>
                         <Link href={'/'}>
-                            <a className="pl-2 transform hover:text-stone-900 hover:font-medium">
+                            <a className="pl-2 transform hover:text-gray-50 hover:font-medium">
                                 Help
                             </a>
                         </Link>
                         <Link href={'/'}>
-                            <a className="pl-2 transform hover:text-slate-900 hover:font-medium">
+                            <a className="pl-2 transform hover:text-gray-50 hover:font-medium">
                                 Join Us
                             </a>
                         </Link>
                         <Link href={'/'}>
-                            <a className="pl-2 transform hover:text-slate-900 hover:font-medium">
+                            <a className="pl-2 transform hover:text-gray-50 hover:font-medium">
                                 Sign In
                             </a>
                         </Link>

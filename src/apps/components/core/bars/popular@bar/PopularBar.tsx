@@ -13,7 +13,11 @@ const PopularBar: ApplicationComponent<IPopularBar> = ({
                 </h3>
                 <nav className="flex items-center gap-x-4 text-neutral-600">
                     {categories.map((category, idx) => (
-                        <button key={idx} onClick={category.onClick}>
+                        <button
+                            key={idx}
+                            onClick={category.onClick}
+                            className="transition-smooth hover:opacity-60"
+                        >
                             {category.text}
                         </button>
                     ))}

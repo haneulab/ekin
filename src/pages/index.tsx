@@ -2,18 +2,21 @@ import { type PageWithLayout } from '@application/types'
 import { type GetServerSidePropsContext } from 'next'
 import { PrimaryLayout } from '@application/components/layouts'
 import Image from 'next/image'
-
+import { HiArrowRight } from 'react-icons/hi'
 import One from 'public/landing/1.png'
 import Two from 'public/landing/2.png'
 import Three from 'public/landing/3.png'
 import Four from 'public/landing/4.png'
 import Five from 'public/landing/5.png'
 import Six from 'public/landing/6.png'
+import Seven from 'public/landing/7.png'
+import Eight from 'public/landing/8.png'
 import {
     TitleCard,
     DirectCard,
     PopularBar,
     ProductCard,
+    UserCard,
 } from '@application/components/core'
 
 const getServerSideProps = async (_: GetServerSidePropsContext) => {
@@ -108,52 +111,47 @@ const HomePage: PageWithLayout = () => {
                     />
                 </section>
             </div>
-            <div className="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-white via-sky-100 to-white relative">
-                <section className="px-4 lg:px-8 pt-16 pb-8 relative z-10">
-                    <article className="flex flex-col items-center">
-                        <h2 className="font-lato font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-slate-900">
-                            Have Questions About Our Apparels?
-                        </h2>
-                    </article>
-                </section>
-                <section className="px-8 pt-8 pb-16 relative z-10 w-full">
-                    <form className="p-8 w-full max-w-lg mx-auto bg-black/90 text-slate-100 backdrop-blur-lg shadow-xl rounded-xl border border-cyan-500/10 shadow-cyan-700/5 flex flex-col gap-y-6">
-                        <p className="text-center font-medium font-nunito text-lg lg:text-xl xl:text-2xl">
-                            Send Us Your Questions!
+            <div className="w-full bg-neutral-900/10 text-neutral-900/90">
+                <section className="px-8 py-16 w-full max-w-cutoff mx-auto flex flex-col gap-y-16">
+                    <div className="flex flex-col gap-y-2 items-center text-center">
+                        <h3 className="font-bold font-poppins text-2xl md:text-3xl lg:text-4xl">
+                            Ekin&apos;s Stylebook
+                        </h3>
+                        <p className="font-light font-nunito text-lg lg:text-xl text-slate-500">
+                            Explore some of the featured style notes from
+                            Ekinians.
                         </p>
-                        <div className="flex flex-col gap-y-4">
-                            <label className="font-medium font-lato text-cyan-400">
-                                Your Email
-                            </label>
-                            <input
-                                type="text"
-                                className="w-full bg-sky-200/20 backdrop-blur-sm px-6 py-3 rounded-xl text-cyan-400 font-medium font-nunito border border-cyan-400/20"
-                            />
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <UserCard
+                            username="angelina_1994"
+                            src={Seven}
+                            alt="Landing Image Seven"
+                        />
+                        <UserCard
+                            username="jean_ish"
+                            src={Eight}
+                            alt="Landing Image Eight"
+                        />
+                        <div className="md:col-span-2">
+                            <article>
+                                <h4 className="font-semibold font-lato text-2xl lg:text-3xl mb-4">
+                                    Ekinian Stylebook,
+                                </h4>
+                                <p className="font-nunito text-slate-500 text-lg lg:text-xl leading-7 lg:leading-8 mb-6">
+                                    Provides various collections that customers
+                                    review on. Exploring this stylebook can help
+                                    you match the styles that suits your need.
+                                </p>
+                                <div>
+                                    <button className="inline-flex items-center gap-x-4 font-medium font-nunito border-l-4 pl-4 border-emerald-400 text-lg lg:text-xl py-2 transition-smooth hover:border-l-8 hover:bg-neutral-900 hover:border-transparent hover:pr-4 border-r-4 border-r-transparent hover:border-r-emerald-400 hover:border-r-8 hover:text-white">
+                                        <span>Go to Stylebook</span>
+                                        <HiArrowRight />
+                                    </button>
+                                </div>
+                            </article>
                         </div>
-                        <div className="flex flex-col gap-y-4">
-                            <label className="font-medium font-lato text-cyan-400">
-                                Title
-                            </label>
-                            <input
-                                type="text"
-                                className="w-full bg-sky-200/20 backdrop-blur-sm px-6 py-3 rounded-xl text-cyan-400 font-medium font-nunito border border-cyan-400/20"
-                            />
-                        </div>
-                        <div className="flex flex-col gap-y-4">
-                            <label className="font-medium font-lato text-cyan-400">
-                                Your Question
-                            </label>
-                            <textarea className="w-full bg-sky-200/20 backdrop-blur-sm px-6 py-3 rounded-xl text-cyan-400 font-medium font-nunito border border-cyan-400/20" />
-                        </div>
-                        <div>
-                            <button
-                                type="submit"
-                                className="w-full px-6 py-3 bg-cyan-500 text-white rounded-xl transition-smooth hover:bg-cyan-800 hover:text-white"
-                            >
-                                Send It Now
-                            </button>
-                        </div>
-                    </form>
+                    </div>
                 </section>
             </div>
         </>
