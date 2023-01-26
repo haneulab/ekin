@@ -21,6 +21,7 @@
             "@application/contexts": ["./apps/contexts/index.ts"],
             "@application/hooks": ["./apps/hooks/index.ts"],
             "@application/functions": ["./apps/functions/index.ts"],
+            "@application/mock": ["./apps/lib/index.ts"],
             "@application/components/layouts": [
                 "./apps/components/layouts/index.ts"
             ],

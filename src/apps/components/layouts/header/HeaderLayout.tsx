@@ -112,22 +112,22 @@ const HeaderLayout: ApplicationComponent = () => {
                             </h1>
                         </article>
                         <ul className="hidden lg:flex lg:items-center lg:justify-center lg:gap-x-6">
-                            <Link href={'/featured'}>
+                            <Link href={'/products/'}>
                                 <a className="font-medium transition-smooth hover:opacity-75 transform lg:hover:scale-110">
                                     New & Featured
                                 </a>
                             </Link>
-                            <Link href={'/tshirts'}>
+                            <Link href={'/products/'}>
                                 <a className="font-medium transition-smooth hover:opacity-75 transform lg:hover:scale-110">
                                     T-shirts
                                 </a>
                             </Link>
-                            <Link href={'/jeans'}>
+                            <Link href={'/products'}>
                                 <a className="font-medium transition-smooth hover:opacity-75 transform lg:hover:scale-110">
                                     Jeans
                                 </a>
                             </Link>
-                            <Link href={'/shoes'}>
+                            <Link href={'/products/'}>
                                 <a className="font-medium transition-smooth hover:opacity-75 transform lg:hover:scale-110">
                                     Shoes
                                 </a>
